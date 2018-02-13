@@ -1,0 +1,121 @@
+
+html
+  font-size: 12px
+
+@include media-breakpoint-up(sm)
+  html
+    font-size: 16px
+
+@include media-breakpoint-up(md)
+  html
+    font-size: 18px
+
+@include media-breakpoint-up(lg)
+  html
+    font-size: 20px
+
+.project
+  background: linear-gradient(to bottom right, #fdfbfb 0%, #ebedee 100%)
+.lead
+  background: #ffffff
+.info
+  background: #000000
+  color: #ffffff
+
+.section-wrapper
+  position: relative
+  height: 100%
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.negative-box
+  background-color: #ffffff
+  color: #000000
+  padding: 10px 30px
+  font-family: "Montserrat", sans-serif !important
+  font-size: 1rem
+  font-weight: 200
+  box-sizing: content-box !important
+
+.logo
+  width: 4rem
+  display: inline-block
+
+.info.active
+  &.logo
+    fill: #ffffff
+  // Backdround box
+
+a
+  color: inherit
+  font-weight: 900
+  &.nav-link
+    padding: 0.5rem 0 0.5rem 2.5rem !important
+
+a:hover, a:active
+  text-decoration: none
+  outline: none
+  color: inherit
+
+hr
+  margin: 5px auto
+  border: 1px solid black
+
+[class*="arrow"]
+  background:
+    image: url('/assets/img/arrow.svg')
+    size: cover
+  display: inline-block
+  width: 1rem
+  height: 0.4rem
+  vertical-align: middle
+
+.arrow-down
+  transform: rotate(90deg)
+.arrow-up
+  transform: rotate(-90deg)
+.arrow-left
+  transform: rotate(180deg)
+
+.scroll-animate
+  animation: arrow 2s ease-in-out infinite
+
+@keyframes arrow
+  0%
+    transform: rotate(90deg) translate(-5px)
+  50%
+    transform: rotate(90deg) translate(5px)
+  100%
+    transform: rotate(90deg) translate(-5px)
+.gutenberg
+  @import "../1_libs/gutenberg_custom"
+
+.logo-white path
+  fill: #ffffff
+  transition: fill 1s linear
+
+input, textarea
+  outline: none
+  background-color: transparent
+  border: 0
+  border-bottom: 0.5px solid white
+  padding: 20px 10px
+  width: 100%
+  border-radius: 0
+  font-size: 0.8rem
+  color: white
+input[type="submit"]
+    background: white
+    color: black
+form > div
+  margin-bottom: 20px
+label
+  color: #D33F49 !important
+  margin: 0
+  border: 0 !important
+  font-size: 0.5rem
+
+.home-nav
+  margin-top: auto

@@ -1,0 +1,37 @@
+{
+  "name": "silviuglv_website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "barba.js": "^1.0.0",
+    "bootstrap": "^4.0.0",
+    "browserify": "^15.2.0",
+    "cssnano": "^3.10.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-changed": "^3.2.0",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-htmlmin": "^4.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-streamify": "^1.0.2",
+    "gulp-uglify": "^3.0.0",
+    "gutenberg-web-type": "^1.2.3",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9",
+    "require-dir": "^0.3.2",
+    "run-sequence": "^2.2.1",
+    "vinyl-source-stream": "^2.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.23.6"
+  }
+}
